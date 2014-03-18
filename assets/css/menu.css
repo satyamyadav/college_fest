@@ -1,0 +1,173 @@
+#nav,#nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+	background-color:rgba(46,24,2,0.7); 
+	bottom: 0px;
+	opacity:1;
+	height: px;
+	left: 0;
+	position: fixed;
+	width:100%;
+	z-index: 100000;
+
+    clear: both;
+    font-size: 12px;
+    padding: 0 0 0 9px;
+   
+   
+    border-radius: 0em;/*0 5px 5px 5px;*/
+    border-top:0px solid black;
+box-shadow:0 0px 25px rgba(126,224,252,0.8) ;
+ 
+   
+
+}
+#nav ul {
+    background-color: #222;
+    border:1px solid #222;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: -9999px;
+    z-index: 2;
+
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    /*-moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.1s linear;
+    -ms-transition: -ms-transform 0.1s linear;
+    -o-transition: -o-transform 0.1s linear;
+    -webkit-transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;*/
+}
+#nav li {
+    background: url('menu_line.png') no-repeat scroll right 5px transparent;
+    float: left;
+    position: relative;
+}
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 30px;
+    padding: 23px 20px 0;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+}
+#nav li h1 a {
+	display: block; text-decoration: none;
+	font-family: 'Special Elite', cursive;
+	text-align:center;
+	margin-top:-18px;
+	font-size:40px;
+
+	color: #999; text-shadow: 0px 3px 8px #7a7a7a;
+ }
+ 	h1 a:hover {
+ 		color: #00a0a0; text-shadow: 0px 5px 8px #2a2a2a;
+ 	}
+
+#nav li:hover ul.subs {
+    left: 0;
+    top: 53px;
+    width: 180px;
+
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#nav ul li {
+    background: none;
+    width: 100%;
+}
+#nav ul li a {
+    float: none;
+}
+
+#nav li:hover > a {
+    color: #00B4FF;
+}
+
+
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+    background:rgba(155,55,155,0.2); none repeat scroll 0 0  transparent;/* #121212; */
+    outline: 0 none;
+}
+
+a img {
+ 
+ margin-top: 10px;
+ margin-right:-240px;
+ margin-left: 250px;
+ 
+}
+#lavalamp {
+    background: url('lavalamp.png') no-repeat scroll 0 0 transparent;
+    height: 16px;
+    left: 13px;
+    position: absolute;
+    top: 0px;
+    width: 64px;
+
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+#lavalamp:hover {
+    -moz-transition-duration: 3000s;
+    -ms-transition-duration: 3000s;
+    -o-transition-duration: 3000s;
+    -webkit-transition-duration: 3000s;
+    transition-duration: 3000s;
+}
+
+#nav li:nth-of-type(1):hover ~ #lavalamp {
+    left: 100px;
+}
+#nav li:nth-of-type(2):hover ~ #lavalamp {
+    left: 275px;
+}
+#nav li:nth-of-type(3):hover ~ #lavalamp {
+    left: 360px;
+}
+#nav li:nth-of-type(4):hover ~ #lavalamp {
+    left: 460px;
+}
+#nav li:nth-of-type(5):hover ~ #lavalamp {
+    left: 560px;
+}
+#nav li:nth-of-type(6):hover ~ #lavalamp {
+    left: 650px;
+}
+#nav li:nth-of-type(7):hover ~ #lavalamp {
+    left: 740px;
+}
+#nav li:nth-of-type(8):hover ~ #lavalamp {
+    left: 740px;
+}
+
+@font-face {
+font-family:"FingerPaint-Regular.ttf";
+src: url("../FingerPaint-Regular.ttf") /* TTF file for CSS3 browsers */
+}

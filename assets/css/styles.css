@@ -1,0 +1,537 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+table ,tr, th, td {
+    border:5px solid black;
+ /*   border-collapse: collapse;
+  */
+    font-family:"Special Elite";
+    border-spacing: 10;
+}
+
+
+b, strong { font-weight: normal}
+i, em { font-style: italic }
+
+/*
+    ... and give links a nice look.
+*/
+
+@font-face {
+  font-family: "Special Elite";
+  src: url("../SpecialElite.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("../ShareTechMono-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "Finger Paint";
+  src: url("../FingerPaint-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "AngelicWar";
+  src: url("../AngelicWar.ttf") format("truetype");
+
+}
+
+	
+
+@font-face {
+font-family:"arabolic";
+src: url("../arabolic.ttf") format("truetype"); /* EOT file for IE */
+}
+@font-face {
+font-family:"FingerPaint-Regular.ttf";
+src: url("../FingerPaint-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+
+@-webkit-keyframes redPulse {
+from { background-color:darkBlue; -webkit-box-shadow: 0 0 9px deepSkyblue; }
+50% { background-color: deepSkyblue; -webkit-box-shadow: 0 0 18px #3D72A4; }
+to { background-color: darkblue; -webkit-box-shadow: 0 0 9px deepSkyblue; }
+}
+
+@-webkit-keyframes bluePulse {
+from { background-color:darkBlue; }
+50% { background-color: deepSkyblue;}
+to { background-color: darkblue; }
+}
+
+
+a.green.button {
+-webkit-animation-name:redPulse;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+q {
+    font-family: 'Special Elite', cursive;
+    color:yellow;
+    
+    
+
+}
+
+x {
+    font-size:20px;
+    text-shadow:0 1px 1px red;
+    font-family:monospace;
+    
+    
+
+}
+
+
+p {
+    font-family:sans-serif;
+}
+b {
+    font-family:  sans-serif;
+}
+ 
+b a {
+    color:white;
+    background-color:transparent;
+    text-decoration: none;
+    padding: 0 0.1em;
+   
+    text-shadow: 0px 1px 0px blue; 
+
+
+    font-family:cursive;
+    font-size:24px;
+    
+ }
+
+
+
+a {
+    color: #fff;
+    background-color:#3D72A4;
+    text-decoration: none;
+    padding: 0 0.1em;
+   
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9); 
+
+    border-radius: 0.8em;
+    font-family:sans-serif;
+    font-size:16px;
+    
+ }
+ 
+
+
+
+iframe {
+    border-radius: 0.9em;
+    border: 10px solid black;
+      
+
+    -webkit-box-shadow: 10px 10px 20px #002624;
+    -moz-box-shadow: 10px 10px 20px #002624;
+    box-shadow: 10px 10px 20px #222;
+
+}
+
+
+div { 
+   
+       border-radius: 0.2em;
+
+}
+
+
+
+img {
+    
+    border-radius:0.8em;
+}
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.jpg') no-repeat ;
+	background-size: cover;
+    box-shadow:
+
+}
+
+body{
+        
+	min-height: 600px;
+	padding: 100px 0 50px;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	box-shadow:0 0 25px rgba(0,0,0,0.3) inset;
+	height:100%;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+	
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer{
+	display: block;
+}
+
+section, header{
+    display: block;
+}
+
+/*----------------------------
+	Styling the presentation
+-----------------------------*/
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+
+#impress .step{
+	width:1000px;
+	height:450px;
+	top:-20px;
+	position:relative;
+	margin:0 auto;
+	
+	
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+}
+
+#impress .step.active{
+	opacity:0.9;
+}
+
+#impress .slide {
+    display: block;
+
+    width: 600;
+    height: 400;
+
+    padding: 40px 60px;
+    
+    
+    
+    background: rgb(185, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(180, 40, 20)), to(rgb(100, 100, 10)));
+    background: -webkit-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:    -moz-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:     -ms-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:      -o-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:         radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    opacity: 0.9;
+    border: 0px solid rgba(55, 111, 155, .5);
+    border-radius: 0px;
+    box-shadow: 0 0 10px 10px rgba(0, 22, 33, .9) ;
+
+    color:white; rgb(255, 255, 255);
+   
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+
+
+#impress h2{
+	font: normal 44px/1.5 'PT Sans Narrow', sans-serif;
+	color:red;
+	position:absolute;
+	z-index:10;
+}
+
+#impress p{
+	font: normal 18px/1.3 'Open Sans', sans-serif;
+	color: black;
+	position:absolute;
+	z-index:10;
+}
+
+#impress img{
+	position:absolute;
+	z-index:1;
+	border-radius:0.8em;
+}
+ 
+
+
+
+/* A CUSTOM CLASS */
+
+#events {
+    width:600px;
+    text-aligin:center;
+    font-size: 50px;
+    line-height: 1;
+    top:10px;
+    
+}
+
+#events q{
+    color: darkblue;
+    display:block;
+    font-size:90px;
+    top:200px;
+}
+
+#events p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+/* A CUSTOM CLASS */
+
+#event {
+    text-aligin:center;
+   
+    line-height: 1;
+   
+    
+}
+
+#event q{
+    color:darkblue;
+    display:block;
+    font-size:90px;
+    top:350px;
+}
+
+#event p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+/*----------------------------
+	Slide 1 - Intro
+-----------------------------*/
+
+#intro {
+   
+    width: 600px;
+    text-aligin:left;
+    font-size: 60px;
+    line-height: 1;
+    
+}
+#intro q {
+    text-aligin:center;
+    color: darkblue;
+    display: block;
+    font-size:90px;
+}
+
+#intro b {
+    display: block;
+    font-size: 25px;
+    line-height: 40px;
+    top:190px;
+}
+
+#intro .thoughts {
+    font-size: 90px;
+    line-height: 150px;
+}
+
+
+#intro p{
+    font-size: 22px;
+    line-height: 1.6;
+    top: 190px;
+    white-space: nowrap;
+    font: normal 18px/1.3 'Open Sans', sans-serif;
+    color: black;
+    position:absolute;
+    z-index:10;
+}
+
+#intro img{
+	top: 120px;
+}
+
+
+/*----------------------------
+	Slide 4 - Upload
+-----------------------------*/
+
+h1 {
+/*  font-family: "AngelicWar";*/
+    font-size:60px;
+}
+
+
+
+#reff{
+     
+    display: block;
+
+
+    width: 600;
+    height: 400;
+
+    padding: 40px 60px;
+    
+    
+    
+  /* background: rgb(215, 15, 115);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 140, 220)), to(rgb(90, 110, 120)));
+    background: -webkit-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:    -moz-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:     -ms-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:      -o-radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));
+    background:         radial-gradient(rgb(180, 40, 20), rgb(100, 100, 10));   */
+    opacity: 0.9;
+    border: 0px solid rgba(55, 111, 155, .5);
+    border-radius: 0px;
+    box-shadow: 0 0 10px 10px rgba(0, 22, 33, .9) ;
+
+    color:white; rgb(255, 255, 255);
+   
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: 1px;
+}
+
+#reff q {
+    font-family: 'Special Elite', cursive;
+    font-size:160x;
+}
+
+#title .try {
+    font-size: 64px;
+    position: absolute;
+    top: -0.5em;
+    left: 1.5em;
+
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#title h1 {
+    font-size: 250px;
+    font-family: 'Finger Paint', cursive;
+
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+#title .footnote {
+    font-size: 32px;
+}
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+
+footer{
+	background-color: transparent;
+	bottom: 3px;
+	opacity:1;
+	height: 20px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+
+
+
+header
+{
+	background-color: transparent;
+	opacity:1;
+	height: 68px;
+	left: 0;
+	top:25px;
+	bottom:0px;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+
+
+}
+
+
